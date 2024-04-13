@@ -1,0 +1,12 @@
+1. command to build a docker image:
+    docker build -t test-source-trace .
+2. command to run the img: 
+    docker run -p 3000:3000 test-source-trace
+
+Steps for publishing docker img to Docker Hub:
+1. Login to Docker Hub:
+    docker login
+2. Tag Docker image:
+    docker tag my-nextjs-app ansarimuzammil/test-source-trace
+3. Push the img to Docker Hub:
+    docker push docker push ansarimuzammil/test-source-trace
